@@ -1,0 +1,63 @@
+@import 'reset';
+@import 'bootstrap/bootstrap.scss';
+
+// styles
+//
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header {
+  margin-top: 6.7rem !important;
+
+  .jumbotron {
+    background: linear-gradient(rgba($primary, 0.8), rgba($primary, 0.8)),
+      url('/img/mountains.jpg');
+  }
+
+  .img-book {
+    width: 100%;
+  }
+}
+
+.navbar {
+  opacity: 0.9;
+
+  a {
+    font-size: 1.4rem;
+  }
+}
+
+// Authors
+.authors {
+  .card:hover {
+    background-color: $primary;
+    color: $white;
+  }
+  &__image {
+    width: 50%;
+    margin-top: -2rem;
+    height: auto;
+  }
+}
+
+// contact
+#contact {
+  i {
+    font-size: 1.3rem;
+  }
+}
+// Media Queries
+@media (min-width: 768px) {
+  header .display-4 {
+    @include font-size($display2-size);
+    font-weight: $display2-weight;
+    line-height: $display-line-height;
+  }
+}
+
+@media (min-width: 992px) {
+  #contact {
+  }
+}
